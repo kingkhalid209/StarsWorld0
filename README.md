@@ -334,3 +334,24 @@
 </body>
 </html>
 
+طلباً 🔥";
+            } else {
+                document.getElementById('typeLabel').innerText = "القسط الشهري المريح:";
+                tabbyPromo.style.display = 'none';
+                badgeText.innerText = "قسطها و ارتاح ✅";
+            }
+            
+            if (remaining < 0) {
+                badgeText.innerText = "القسط يتجاوز الراتب ⚠️";
+                badgeText.style.backgroundColor = "#ef4444";
+            } else {
+                badgeText.style.backgroundColor = "var(--primary)";
+            }
+        } else {
+            resultArea.style.display = 'none';
+        }
+    }
+</script>
+</body>
+</html>
+
